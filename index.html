@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+	  <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+
+  <body>
+    <div id="survey">
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p></div>
+
+    <div id="main">
+      <form id="survey-form">
+        <div id="info">
+      <fieldset>
+        <label id="name-label">Name: <input id="name" type="text" name="name" required  placeholder="Full Name"/></label>
+        <label id="email-label">Email: <input id="email" type="email" name="email" required placeholder="example@mail.com"/></label>
+        <label id="number-label">Age: <input id="number" type="number" name="age" min="10" max="120" required placeholder="20"/></label>
+        </div>
+
+        <div id="dropdown-menu">
+        <label>Dominent Programming Language:
+          <select id="dropdown">
+            <option value="">Select One</option>
+            <option value="C++">C++</option>
+            <option value="Java">Java</option>
+            <option value="Python">Python</option>
+            <option value="C">C</option>
+          </select>
+          </label>
+          </div>
+          </fieldset>
+
+          <div id="employment">
+         <fieldset>
+        <label>Employment Status: <br></label>
+        <input type="radio" name="employment" value="full-time" class="inline" /> Full Time
+        <label><input type="radio" name="employment" value="student" class="inline" /> Student</label>
+        </fieldset>
+        </div>
+        <div id="os">
+          <label>Which operating system do you know? </label>
+        <input type="checkbox" name="os1" value="windows" class="inline" required /> Windows</a>
+        <label><input type="checkbox" name="os2" value="linux" class="inline" required /> Linux/Ubuntu</a></label>
+        <label><input type="checkbox" name="os3" value="mac" class="inline" required /> Mac-Os</a></label>
+        
+        <div id="review">
+          <fieldset>
+         <label id="comment-label">Any comments or suggestions?
+          <textarea name="review" rows="6" cols="40" placeholder="Enter your comments here."></textarea>
+			  </label>
+        </fieldset>
+      <input id="submit" type="submit" value="Submit" />
+    </form>
+    </div>
+  </body>
+</html>
